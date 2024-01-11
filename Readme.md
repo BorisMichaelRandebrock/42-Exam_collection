@@ -1,7 +1,7 @@
 Collection of exercises 42* rank 2
 
 If the exercise requires a function you will find the coresponding main in the folder of its current level and they will have to be compiled seperately (with the prototype on top).
-This avoids some avoidable mistakes as moulinette is invoking the functions this way.
+This avoids some mistakes as moulinette is invoking the functions this way.
 Also, never push these mains.
 
 In case of a program, the main is obviously included.
