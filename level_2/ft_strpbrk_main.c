@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_ft_strpbrk.c                                  :+:      :+:    :+:   */
+/*   ft_strpbrk_main.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brandebr <brandebr@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 17:58:21 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/05 18:18:01 by brandebr         ###   ########.fr       */
+/*   Updated: 2024/01/11 13:46:01 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
-char	*ft_strpbrk(const char *s1, const char *s2);
 
+char	*ft_strpbrk(const char *s1, const char *s2);
 
 int	main(int argc, char **argv)
 {
 	if (argc == 3)
 	{
-		printf("the pointer retur by ft: %p\n",ft_strpbrk(argv[1], argv[2]));
-		printf("the pointer retur by or: %p\n",strpbrk(argv[1], argv[2]));
-		printf("the pointer retur by ft: %c\n",*ft_strpbrk(argv[1], argv[2]));
-		printf("the pointer retur by or: %c\n",*strpbrk(argv[1], argv[2]));
+		printf("the pointer retur by ft: %p\n", ft_strpbrk(argv[1], argv[2]));
+		printf("the pointer retur by or: %p\n", strpbrk(argv[1], argv[2]));
+		printf("the pointer retur by ft: %c\n", *ft_strpbrk(argv[1], argv[2]));
+		printf("the pointer retur by or: %c\n", *strpbrk(argv[1], argv[2]));
 	}
 	return (0);
 }

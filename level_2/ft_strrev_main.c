@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strrev_main.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brandebr <brandebr@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/20 17:54:41 by brandebr          #+#    #+#             */
-/*   Updated: 2023/12/20 18:09:55 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/11 13:53:45 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/11 13:56:55 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int		max(int* tab, unsigned int len);
+char	*ft_strrev(char *str);
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-		(void) argv;
-		int		numbs[] = {13, 5, 6, 12};
-		int		res;
-		if (argc == 2)
-		{
-				res = max(numbs, 4);
-				printf("max number: %i\n",  res);
-		}
-		return (0);
+	if (argc == 2)
+		printf("%s", ft_strrev(argv[1]));
+	return (0);
 }

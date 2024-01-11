@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_ft_strcspn.c                                  :+:      :+:    :+:   */
+/*   ft_atoi_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brandebr <brandebr@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/05 17:11:27 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/05 18:15:20 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/11 12:54:43 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/11 13:12:29 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
-size_t	ft_strcspn(const char *s, const char *reject);
+int	ft_atoi(const char *str);
 
 int	main(int argc, char **argv)
 {
-		if (argc == 3)
-		{
-				printf("ft result:%zu\n", ft_strcspn(argv[1], argv[2]));
-				printf("orig result:%zu\n", strcspn(argv[1], argv[2]));
-		}
-		return (0);
+	int	num;
+
+	if (argc == 2)
+	{
+		num = ft_atoi(argv[1]);
+		printf("ft result:   %d\n", num);
+		printf("orig result: %d\n", num);
+	}
+	return (0);
 }
-// ./a.out "por la presente ha sido " "ent"

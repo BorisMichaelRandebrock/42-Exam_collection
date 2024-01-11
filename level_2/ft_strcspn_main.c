@@ -1,42 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   do_op.c                                            :+:      :+:    :+:   */
+/*   ft_strcspn_main.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/19 15:52:33 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/11 13:48:42 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/05 17:11:27 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/11 13:17:52 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <string.h>
+
+size_t	ft_strcspn(const char *s, const char *reject);
 
 int	main(int argc, char **argv)
 {
-	int		a;
-	int		b;
-	char	op;
+	char	*s;
+	char	*s1;
 
-	if (argc == 4)
+	s = "somwher1e over the rainbow ";
+	s1 = " yx1 :wz1";
+	printf("number of chars spannned: %i\n", (int)strcspn(s, s1));
+	printf("number of chars spannned: %i\n", (int)ft_strcspn(s, s1));
+	if (argc == 3)
 	{
-		a = atoi(argv[1]);
-		op = argv[2][0];
-		b = atoi(argv[3]);
-		if (op == '+')
-			printf("%d", a + b);
-		if (op == '-')
-			printf("%d", a - b);
-		if (op == '/')
-			printf("%d", a / b);
-		if (op == '%')
-			printf("%d", a % b);
-		if (op == '*')
-			printf("%d", a * b);
+		printf("ft result:%zu\n", ft_strcspn(argv[1], argv[2]));
+		printf("orig result:%zu\n", strcspn(argv[1], argv[2]));
 	}
-	else
-		printf("\n");
 	return (0);
 }
+// ./a.out "por la presente ha sido " "ent"

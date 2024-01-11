@@ -1,45 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   alpha_mirror.c                                     :+:      :+:    :+:   */
+/*   ft_strdup_main.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/19 14:36:01 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/11 13:51:17 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/11 13:36:15 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/11 13:39:13 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-void	pu(char c)
+char	*ft_strdup(char *src);
+
+int	main(void)
 {
-	write(1, &c, 1);
-}
+	char	*s;
+	char	*dup;
+	char	*d;
+	int		i;
 
-void	alpha_mirror(char *s)
-{
-	int	i;
-
+	s = "somwher1e over the rainbow ";
+	dup = strdup(s);
+	d = ft_strdup(s);
 	i = 0;
-	while (s[i])
-	{
-		if (s[i] >= 'a' && s[i] <= 'z')
-			pu('a' + 'z' - s[i]);
-		else if (s[i] >= 'A' && s[i] <= 'Z')
-			pu('A' + 'Z' - s[i]);
-		else
-			pu(s[i]);
+	while (dup[i])
 		i++;
-	}
-}
-
-int	main(int argc, char **argv)
-{
-	if (argc == 2)
-	{
-		alpha_mirror(argv[1]);
-	}
-	pu('\n');
+	printf("orig length: %i\n", i);
+	i = 0;
+	while (d[i])
+		i++;
+	printf("my  length: %i\n", i);
+	printf("original function: %s\n", dup);
+	printf("mine: %s\n", d);
 	return (0);
 }
