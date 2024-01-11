@@ -1,32 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_ft_strcpy.c                                   :+:      :+:    :+:   */
+/*   rev_print.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 10:10:33 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/11 10:11:13 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/11 10:47:24 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/11 10:54:40 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-char	*ft_strcpy(char *s1, char *s2);
+void	bo(char c)
+{
+	write(1, &c, 1);
+}
+
+int	len(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
+
+void	rev_print(char *str)
+{
+	int	length;
+
+	length = len(str);
+	length--;
+	while (length >= 0)
+	{
+		bo(str[length]);
+		length--;
+	}
+}
 
 int	main(int argc, char **argv)
 {
-	char	*str;
-	char	new[100];
-	char	orig[100];
-
-	str = argv[1];
-	ft_strcpy(new, str);
-	ft_strcpy(orig, str);
 	if (argc == 2)
-	{
-		printf("%s\n", new);
-		printf("%s\n", orig);
-	}
+		rev_print(argv[1]);
+	write(1, "\n", 1);
 	return (0);
 }

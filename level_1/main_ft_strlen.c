@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_ft_strcpy.c                                   :+:      :+:    :+:   */
+/*   main_ft_strlen.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 10:10:33 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/11 10:11:13 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/11 10:10:39 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/11 10:11:05 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strcpy(char *s1, char *s2);
+int	ft_strlen(char *str);
 
-int	main(int argc, char **argv)
+int	main(void)
 {
-	char	*str;
-	char	new[100];
-	char	orig[100];
+	int	len;
 
-	str = argv[1];
-	ft_strcpy(new, str);
-	ft_strcpy(orig, str);
-	if (argc == 2)
-	{
-		printf("%s\n", new);
-		printf("%s\n", orig);
-	}
+	char *str = "Hello World!"; // 12 characters
+	len = ft_strlen(str);
+	printf("len: %d\n", len);
 	return (0);
 }
