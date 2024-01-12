@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_ft_swap.c                                     :+:      :+:    :+:   */
+/*   atoi_main.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 10:10:42 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/11 10:11:00 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/11 12:54:43 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/12 18:34:53 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-void	ft_swap(int *a, int *b);
+int	ft_atoi(const char *str);
 
-int	main(void)
+int	main(int argc, char **argv)
 {
-	int	a;
-	int	b;
+	int	num;
 
-	a = 1;
-	b = 2;
-	printf("a: %d, b: %d\n", a, b);
-	ft_swap(&a, &b);
-	printf("a: %d, b: %d\n", a, b);
+	if (argc == 2)
+	{
+		num = ft_atoi(argv[1]);
+		printf("ft result:   %d\n", num);
+		printf("orig result: %d\n", num);
+	}
 	return (0);
 }
