@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   paramsum.c                                         :+:      :+:    :+:   */
+/*   itoa_main.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 15:12:32 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/12 11:17:28 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/05 12:21:08 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/12 14:31:07 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void	pun(int num)
-{
-	char	str[] = "0123456789";
-
-	if (num > 9)
-		pun(num / 10);
-	write(1, &str[num % 10], 1);
-}
+int		nc(int nbr);
+char	*ft_itoa(int nbr);
 
 int	main(int argc, char **argv)
 {
-	int	result;
+	int		nu;
+	int		ns;
+	char	*new;
 
-	(void)argv;
-	if (argc > 1)
+	if (argc == 2)
 	{
-		result = argc - 1;
-		pun(result);
+		nu = atoi(argv[1]);
+		ns = nc(nu);
+		printf("the numbers found in the number introduced are totalling:\n%d\n",
+			ns);
+		new = ft_itoa(nu);
+		printf("%s\n", new);
 	}
-	write(1, "\n", 1);
 	return (0);
 }

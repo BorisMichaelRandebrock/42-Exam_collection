@@ -12,6 +12,21 @@ int	ft_strlen(char *str)
 	return (len);
 }
 
+int	matoi(char *str)
+{
+	int	i;
+	int	res;
+
+	i = 0;
+	res = 0;
+	while (str[i])
+	{
+		res = res * 10 + (str[i] - '0');
+		i++;
+	}
+	return (res);
+}
+
 void	ft_putnbr(int n)
 {
 	char	c;
@@ -35,7 +50,7 @@ int	main(int argc, char **argv)
 	i = 1;
 	if (argc == 2)
 	{
-		number = atoi(argv[1]);
+		number = matoi(argv[1]);
 		while (i <= 9)
 		{
 			ft_putnbr(i);

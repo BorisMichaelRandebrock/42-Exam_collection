@@ -1,36 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   paramsum.c                                         :+:      :+:    :+:   */
+/*   lcm_main.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 15:12:32 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/12 11:17:28 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/12 10:58:04 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/12 11:07:27 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void	pun(int num)
-{
-	char	str[] = "0123456789";
-
-	if (num > 9)
-		pun(num / 10);
-	write(1, &str[num % 10], 1);
-}
+unsigned int	lcm(unsigned int a, unsigned int b);
 
 int	main(int argc, char **argv)
 {
-	int	result;
+		unsigned int res;
 
-	(void)argv;
-	if (argc > 1)
+	if (argc == 3)
 	{
-		result = argc - 1;
-		pun(result);
+		res = lcm(atoi(argv[1]), atoi(argv[2]));
+		printf("%i\n", res);
 	}
-	write(1, "\n", 1);
 	return (0);
 }

@@ -6,11 +6,11 @@
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/07 13:57:33 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/10 19:15:51 by brandebr         ###   ########.fr       */
+/*   Updated: 2024/01/12 14:47:47 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_foreach/ft_list.h"
+#include "../ft_foreach/ft_list.h" // Read the assignement with attention.
 #include <stdlib.h>
 
 void	ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())

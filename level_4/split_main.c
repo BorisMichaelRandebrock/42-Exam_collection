@@ -1,36 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   paramsum.c                                         :+:      :+:    :+:   */
+/*   split_main.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 15:12:32 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/12 11:17:28 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/04 19:28:43 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/12 15:07:37 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	pun(int num)
-{
-	char	str[] = "0123456789";
-
-	if (num > 9)
-		pun(num / 10);
-	write(1, &str[num % 10], 1);
-}
+char	**ft_split(char *str);
+int		wc(char *str);
 
 int	main(int argc, char **argv)
 {
-	int	result;
+	int		i;
+	char	**res;
+	int		words_count;
 
-	(void)argv;
-	if (argc > 1)
+	i = 0;
+	if (argc == 2)
 	{
-		result = argc - 1;
-		pun(result);
+		res = ft_split(argv[1]);
+		words_count = wc(argv[1]);
+		printf("number of words found in string argv: %d\n", words_count);
+		while (i < words_count)
+		{
+			printf("%s\n", res[i++]);
+		}
+		i = 0;
+		while (i < words_count)
+		{
+			printf("%s", res[i++]);
+			if (i < words_count)
+				printf(" ");
+		}
 	}
-	write(1, "\n", 1);
 	return (0);
 }

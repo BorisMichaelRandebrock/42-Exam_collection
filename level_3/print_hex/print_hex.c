@@ -1,36 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   paramsum.c                                         :+:      :+:    :+:   */
+/*   print_hex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 15:12:32 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/12 11:17:28 by brandebr         ###   ########.fr       */
+/*   Created: 2024/01/12 11:21:52 by brandebr          #+#    #+#             */
+/*   Updated: 2024/01/12 11:30:22 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	pun(int num)
+int	matoi(char *s)
 {
-	char	str[] = "0123456789";
+	int	i;
+	int	res;
 
-	if (num > 9)
-		pun(num / 10);
-	write(1, &str[num % 10], 1);
+	i = 0;
+	res = 0;
+	while (s[i] && s[i] >= '0' && s[i] <= '9')
+	{
+		res = res * 10 + (s[i] - '0');
+		i++;
+	}
+	return (res);
+}
+
+void	print_hex(int n)
+{
+	char	*hex;
+
+	hex = "0123456789abcdef";
+	if (n >= 16)
+		print_hex(n / 16);
+	write(1, &hex[n % 16], 1);
 }
 
 int	main(int argc, char **argv)
 {
-	int	result;
+	int	n;
 
-	(void)argv;
-	if (argc > 1)
-	{
-		result = argc - 1;
-		pun(result);
-	}
+	n = matoi(argv[1]);
+	if (argc == 2)
+		print_hex(n);
 	write(1, "\n", 1);
 	return (0);
 }
