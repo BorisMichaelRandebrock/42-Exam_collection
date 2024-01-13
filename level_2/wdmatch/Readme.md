@@ -14,13 +14,13 @@ If the number of arguments is not 2, the program displays a \n.
 
 Examples:
 
-$>./wdmatch "faya" "fgvvfdxcacpolhyghbreda" | cat -e
-faya$
-$>./wdmatch "faya" "fgvvfdxcacpolhyghbred" | cat -e
-$
-$>./wdmatch "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq " | cat -e
-quarante deux$
-$>./wdmatch "error" rrerrrfiiljdfxjyuifrrvcoojh | cat -e
-$
+$>./wdmatch "faya" "fgvvfdxcacpolhyghbreda" | cat -e  
+faya$  
+$>./wdmatch "faya" "fgvvfdxcacpolhyghbred" | cat -e  
+$  
+$>./wdmatch "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq " | cat -e  
+quarante deux$  
+$>./wdmatch "error" rrerrrfiiljdfxjyuifrrvcoojh | cat -e  
+$  
 $>./wdmatch | cat -e
-$
+$  
