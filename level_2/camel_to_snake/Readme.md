@@ -12,10 +12,10 @@ except for the first one.
 A snake_case string is a string where each word is in lower case, separated by
 an underscore "_".
 
-Examples:
-$>./camel_to_snake "hereIsACamelCaseWord"
-here_is_a_camel_case_word
-$>./camel_to_snake "helloWorld" | cat -e
-hello_world$
-$>./camel_to_snake | cat -e
-$
+Examples:   
+$>./camel_to_snake "hereIsACamelCaseWord"   
+here_is_a_camel_case_word   
+$>./camel_to_snake "helloWorld" | cat -e   
+hello_world$   
+$>./camel_to_snake | cat -e   
+$  
