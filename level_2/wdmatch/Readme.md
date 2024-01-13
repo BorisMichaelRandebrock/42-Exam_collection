@@ -21,6 +21,6 @@ $
 $>./wdmatch "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq " | cat -e  
 quarante deux$  
 $>./wdmatch "error" rrerrrfiiljdfxjyuifrrvcoojh | cat -e  
-$  
-$>./wdmatch | cat -e
+$   
+$>./wdmatch | cat -e  
 $  
