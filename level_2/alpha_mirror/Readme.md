@@ -18,10 +18,10 @@ If the number of arguments is not 1, display only a newline.
 
 Examples:
 
-$>./alpha_mirror "abc"
-zyx
-$>./alpha_mirror "My horse is Amazing." | cat -e
-Nb slihv rh Znzarmt.$
-$>./alpha_mirror | cat -e
-$
+$>./alpha_mirror "abc"  
+zyx  
+$>./alpha_mirror "My horse is Amazing." | cat -e  
+Nb slihv rh Znzarmt.$   
+$>./alpha_mirror | cat -e   
+$   
 $>
