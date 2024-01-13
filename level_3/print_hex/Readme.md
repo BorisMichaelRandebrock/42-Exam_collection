@@ -15,6 +15,6 @@ a$
 $> ./print_hex "255" | cat -e  
 ff$  
 $> ./print_hex "5156454" | cat -e  
-4eae66$  
-$> ./print_hex | cat -e
+4eae66$    
+$> ./print_hex | cat -e  
 $  
