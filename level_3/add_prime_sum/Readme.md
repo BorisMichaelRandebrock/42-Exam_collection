@@ -13,10 +13,10 @@ Yes, the examples are right.
 
 Examples:
 
-$>./add_prime_sum 5
-10
-$>./add_prime_sum 7 | cat -e
-17$
-$>./add_prime_sum | cat -e
-0$
+$>./add_prime_sum 5  
+10  
+$>./add_prime_sum 7 | cat -e  
+17$  
+$>./add_prime_sum | cat -e  
+0$  
 $>
