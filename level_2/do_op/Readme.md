@@ -16,13 +16,13 @@ You can assume the string have no mistakes or extraneous characters. Negative
 numbers, in input or output, will have one and only one leading '-'. The
 result of the operation fits in an int.
 
-Examples:
+Examples:  
 
-$> ./do_op "123" "*" 456 | cat -e
-56088$
-$> ./do_op "9828" "/" 234 | cat -e
-42$
-$> ./do_op "1" "+" "-43" | cat -e
--42$
-$> ./do_op | cat -e
+$> ./do_op "123" "*" 456 | cat -e   
+56088$   
+$> ./do_op "9828" "/" 234 | cat -e   
+42$   
+$> ./do_op "1" "+" "-43" | cat -e   
+-42$   
+$> ./do_op | cat -e  
 $
