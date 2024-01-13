@@ -12,17 +12,17 @@ The output will be followed by a \n.
 
 If the number of arguments is not 1, the program displays \n.
 
-Example:
-
-$>./rotone "abc"
-bcd
-$>./rotone "Les stagiaires du staff ne sentent pas toujours tres bon." | cat -e
-Mft tubhjbjsft ev tubgg of tfoufou qbt upvkpvst usft cpo.$
-$>./rotone "AkjhZ zLKIJz , 23y " | cat -e
-BlkiA aMLJKa , 23z $
-$>./rotone | cat -e
-$
-$>
-$>./rotone "" | cat -e
-$
-$>
+Example:  
+  
+$>./rotone "abc"  
+bcd  
+$>./rotone "Les stagiaires du staff ne sentent pas toujours tres bon." | cat -e   
+Mft tubhjbjsft ev tubgg of tfoufou qbt upvkpvst usft cpo.$  
+$>./rotone "AkjhZ zLKIJz , 23y " | cat -e  
+BlkiA aMLJKa , 23z $  
+$>./rotone | cat -e  
+$  
+$>  
+$>./rotone "" | cat -e  
+$  
+$>  
