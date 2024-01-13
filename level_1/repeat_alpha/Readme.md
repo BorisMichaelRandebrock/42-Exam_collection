@@ -13,17 +13,17 @@ Case remains unchanged.
 
 If the number of arguments is not 1, just display a newline.
 
-Examples:
-
-$>./repeat_alpha "abc"
-abbccc
-$>./repeat_alpha "Alex." | cat -e
-Alllllllllllleeeeexxxxxxxxxxxxxxxxxxxxxxxx.$
-$>./repeat_alpha 'abacadaba 42!' | cat -e
-abbacccaddddabba 42!$
-$>./repeat_alpha | cat -e
-$
-$>
-$>./repeat_alpha "" | cat -e
-$
-$>
+Examples:  
+  
+$>./repeat_alpha "abc"   
+abbccc    
+$>./repeat_alpha "Alex." | cat -e  
+Alllllllllllleeeeexxxxxxxxxxxxxxxxxxxxxxxx.$    
+$>./repeat_alpha 'abacadaba 42!' | cat -e  
+abbacccaddddabba 42!$   
+$>./repeat_alpha | cat -e  
+$  
+$>  
+$>./repeat_alpha "" | cat -e   
+$  
+$>  
