@@ -41,9 +41,11 @@ int	main(int argc, char **argv)
 {
 	int	n;
 
-	n = matoi(argv[1]);
 	if (argc == 2)
+	{
+		n = matoi(argv[1]);
 		print_hex(n);
+	}
 	write(1, "\n", 1);
 	return (0);
 }

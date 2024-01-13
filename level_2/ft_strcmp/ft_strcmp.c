@@ -26,15 +26,3 @@ int	ft_strcmp(char *s1, char *s2)
 	}
 	return (s1[i] - s2[i]);
 }
-
-int	main(void)
-{
-	char	*s;
-	char	*s1;
-
-	s = "somwhere over the rainbow ";
-	s1 = "somwhere ober the rainbow";
-	printf("%i", strcmp(s, s1));
-	printf("%i", ft_strcmp(s, s1));
-	return (0);
-}
