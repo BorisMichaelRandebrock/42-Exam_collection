@@ -15,12 +15,12 @@ If the number of parameters is not 2, the program displays a newline.
 
 Examples :
 
-$>./hidenp "fgex.;" "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6" | cat -e
-1$
-$>./hidenp "abc" "2altrb53c.sse" | cat -e
-1$
-$>./hidenp "abc" "btarc" | cat -e
-0$
-$>./hidenp | cat -e
-$
+$>./hidenp "fgex.;" "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6" | cat -e  
+1$  
+$>./hidenp "abc" "2altrb53c.sse" | cat -e  
+1$  
+$>./hidenp "abc" "btarc" | cat -e  
+0$  
+$>./hidenp | cat -e  
+$  
 $>
