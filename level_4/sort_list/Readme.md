@@ -1,3 +1,7 @@
+As in this assignement you have to work with a header you do not know and you can not deliver it either, I have provided you with the list.h @ its lower level..     
+Be aware.. in the examen you will have to access it at the same level (that is why the comment).
+But check out the header in the lower level as you may have to re-create it in the exam (as well as the cmp function which you will find in its main).   
+
 Assignment name  : sort_list  
 Expected files   : sort_list.c  
 Allowed functions:  
@@ -26,7 +30,7 @@ Functions passed as cmp will always return a value different from
 For example, the following function used as cmp will sort the list
 in ascending order:
 
-int ascending(int a, int b)
-{
-	return (a <= b);
-}
+int ascending(int a, int b)  
+{  
+&nbsp;&nbsp;&nbsp;&nbsp;	return (a <= b);  
+}  
