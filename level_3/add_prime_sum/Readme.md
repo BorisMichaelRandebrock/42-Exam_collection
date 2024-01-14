@@ -1,6 +1,6 @@
-Assignment name  : add_prime_sum
-Expected files   : add_prime_sum.c
-Allowed functions: write, exit
+Assignment name  : add_prime_sum   
+Expected files   : add_prime_sum.c   
+Allowed functions: write, exit   
 --------------------------------------------------------------------------------
 
 Write a program that takes a positive integer as argument and displays the sum
