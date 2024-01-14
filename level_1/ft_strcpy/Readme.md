@@ -1,6 +1,6 @@
-Assignment name  : ft_strcpy
-Expected files   : ft_strcpy.c
-Allowed functions:
+Assignment name  : ft_strcpy  
+Expected files   : ft_strcpy.c   
+Allowed functions:   
 --------------------------------------------------------------------------------
 
 Reproduce the behavior of the function strcpy (man strcpy).
