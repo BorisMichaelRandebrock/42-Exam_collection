@@ -1,6 +1,6 @@
-Assignment name  : alpha_mirror
-Expected files   : alpha_mirror.c
-Allowed functions: write
+Assignment name  : alpha_mirror  
+Expected files   : alpha_mirror.c   
+Allowed functions: write   
 --------------------------------------------------------------------------------
 
 Write a program called alpha_mirror that takes a string and displays this string
