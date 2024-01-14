@@ -1,6 +1,6 @@
-Assignment name  : rot_13
-Expected files   : rot_13.c
-Allowed functions: write
+Assignment name  : rot_13  
+Expected files   : rot_13.c  
+Allowed functions: write   
 --------------------------------------------------------------------------------
 
 Write a program that takes a string and displays it, replacing each of its
