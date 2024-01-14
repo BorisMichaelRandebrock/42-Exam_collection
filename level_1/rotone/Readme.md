@@ -1,6 +1,6 @@
-Assignment name  : rotone
-Expected files   : rotone.c
-Allowed functions: write
+Assignment name  : rotone  
+Expected files   : rotone.c   
+Allowed functions: write  
 --------------------------------------------------------------------------------
 
 Write a program that takes a string and displays it, replacing each of its
