@@ -1,6 +1,6 @@
-Assignment name  : paramsum
-Expected files   : paramsum.c
-Allowed functions: write
+Assignment name  : paramsum  
+Expected files   : paramsum.c  
+Allowed functions: write  
 --------------------------------------------------------------------------------
 
 Write a program that displays the number of arguments passed to it, followed by
