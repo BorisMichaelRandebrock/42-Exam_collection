@@ -1,6 +1,6 @@
-Assignment name  : reverse_bits
-Expected files   : reverse_bits.c
-Allowed functions:
+Assignment name  : reverse_bits  
+Expected files   : reverse_bits.c  
+Allowed functions:   
 --------------------------------------------------------------------------------
 
 Write a function that takes a byte, reverses it, bit by bit (like the
