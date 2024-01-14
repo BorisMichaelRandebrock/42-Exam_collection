@@ -1,6 +1,6 @@
-Assignment name  : max
-Expected files   : max.c
-Allowed functions:
+Assignment name  : max   
+Expected files   : max.c   
+Allowed functions:   
 --------------------------------------------------------------------------------
 
 Write the following function:
