@@ -1,6 +1,6 @@
-Assignment name	: ft_strpbrk
-Expected files	: ft_strpbrk.c
-Allowed functions: None
+Assignment name	: ft_strpbrk   
+Expected files	: ft_strpbrk.c   
+Allowed functions: None  
 ---------------------------------------------------------------
 
 Reproduce exactly the behavior of the function strpbrk
