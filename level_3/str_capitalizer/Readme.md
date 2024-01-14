@@ -1,6 +1,6 @@
-Assignment name  : str_capitalizer
-Expected files   : str_capitalizer.c
-Allowed functions: write
+Assignment name  : str_capitalizer  
+Expected files   : str_capitalizer.c  
+Allowed functions: write  
 --------------------------------------------------------------------------------
 
 Write a program that takes one or several strings and, for each argument,
