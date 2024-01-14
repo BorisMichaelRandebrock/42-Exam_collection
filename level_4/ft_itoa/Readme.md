@@ -1,6 +1,6 @@
-Assignment name  : ft_itoa
-Expected files   : ft_itoa.c
-Allowed functions: malloc
+Assignment name  : ft_itoa  
+Expected files   : ft_itoa.c  
+Allowed functions: malloc  
 --------------------------------------------------------------------------------
 
 Write a function that takes an int and converts it to a null-terminated string.
