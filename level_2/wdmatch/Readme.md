@@ -1,6 +1,6 @@
-Assignment name  : wdmatch
-Expected files   : wdmatch.c
-Allowed functions: write
+Assignment name  : wdmatch  
+Expected files   : wdmatch.c  
+Allowed functions: write   
 --------------------------------------------------------------------------------
 
 Write a program that takes two strings and checks whether it's possible to
