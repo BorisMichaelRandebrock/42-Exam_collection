@@ -1,6 +1,6 @@
-Assignment name  : ft_atoi
-Expected files   : ft_atoi.c
-Allowed functions: None
+Assignment name  : ft_atoi  
+Expected files   : ft_atoi.c  
+Allowed functions: None  
 --------------------------------------------------------------------------------
 
 Write a function that converts the string argument str to an integer (type int)
