@@ -1,6 +1,6 @@
-Assignment name  : rstr_capitalizer
-Expected files   : rstr_capitalizer.c
-Allowed functions: write
+Assignment name  : rstr_capitalizer  
+Expected files   : rstr_capitalizer.c  
+Allowed functions: write  
 --------------------------------------------------------------------------------
 
 Write a program that takes one or more strings and, for each argument, puts
