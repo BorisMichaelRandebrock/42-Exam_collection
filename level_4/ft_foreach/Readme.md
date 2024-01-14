@@ -17,8 +17,8 @@ The function pointed to by f will be used as follows:
 You must use the following structure, and turn it in as a file called
 ft_list.h:
 
-typedef struct    s_list
-{
-    struct s_list *next;
-    void          *data;
-}                 t_list;
+typedef struct&nbsp;&nbsp;        s_list  
+{&nbsp;&nbsp;    
+ &nbsp;&nbsp;&nbsp;&nbsp;   struct s_list&nbsp;&nbsp;     *next;  
+&nbsp;&nbsp;&nbsp;&nbsp;    void  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;    *data;  
+} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    t_list;  
