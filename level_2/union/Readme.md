@@ -1,6 +1,6 @@
-Assignment name  : union
-Expected files   : union.c
-Allowed functions: write
+Assignment name  : union  
+Expected files   : union.c   
+Allowed functions: write   
 --------------------------------------------------------------------------------
 
 Write a program that takes two strings and displays, without doubles, the
