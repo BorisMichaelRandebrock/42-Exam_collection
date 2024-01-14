@@ -1,6 +1,6 @@
-Assignment name  : pgcd
-Expected files   : pgcd.c
-Allowed functions: printf, atoi, malloc, free
+Assignment name  : pgcd  
+Expected files   : pgcd.c  
+Allowed functions: printf, atoi, malloc, free  
 --------------------------------------------------------------------------------
 
 Write a program that takes two strings representing two strictly positive
