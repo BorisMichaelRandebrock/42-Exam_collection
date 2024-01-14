@@ -1,6 +1,6 @@
-Assignment name  : snake_to_camel
-Expected files   : snake_to_camel.c
-Allowed functions: malloc, free, realloc, write
+Assignment name  : snake_to_camel  
+Expected files   : snake_to_camel.c  
+Allowed functions: malloc, free, realloc, write  
 --------------------------------------------------------------------------------
 
 Write a program that takes a single string in snake_case format
