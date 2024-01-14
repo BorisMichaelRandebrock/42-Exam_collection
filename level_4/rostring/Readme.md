@@ -1,6 +1,6 @@
-Assignment name  : rostring
-Expected files   : rostring.c
-Allowed functions: write, malloc, free
+Assignment name  : rostring  
+Expected files   : rostring.c  
+Allowed functions: write, malloc, free  
 --------------------------------------------------------------------------------
 
 Write a program that takes a string and displays this string after rotating it
