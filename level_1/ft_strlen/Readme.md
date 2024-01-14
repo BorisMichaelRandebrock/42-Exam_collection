@@ -1,6 +1,6 @@
-Assignment name  : ft_strlen
-Expected files   : ft_strlen.c
-Allowed functions:
+Assignment name  : ft_strlen  
+Expected files   : ft_strlen.c  
+Allowed functions:   
 --------------------------------------------------------------------------------
 
 Write a function that returns the length of a string.
