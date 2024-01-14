@@ -18,12 +18,12 @@ The flood_fill function will be prototyped like this:
 
 The t_point structure is prototyped like this:
 
-  typedef struct  s_point
-  {
-    int           x;
-    int           y;
-  }               t_point;
-
+  typedef struct  s_point    
+  {   
+  &nbsp;&nbsp;    &nbsp;&nbsp;      int&nbsp;&nbsp;    &nbsp;&nbsp;               x;    
+  &nbsp;&nbsp;    &nbsp;&nbsp;      int&nbsp;&nbsp;    &nbsp;&nbsp;               y;    
+  }  &nbsp;&nbsp;    &nbsp;&nbsp;     &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;                t_point;   
+ 
 Example:
 
 $> cat test.c
@@ -49,13 +49,13 @@ char** make_area(char** zone, t_point size)
 
 int main(void)
 {
-	t_point size = {8, 5};
-	char *zone[] = {
-		"11111111",
-		"10001001",
-		"10010001",
-		"10110001",
-		"11100001",
+	t_point size = {8, 5};   
+	char *zone[] = {   
+&nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    		"11111111",    
+&nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    		"10001001",    
+&nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    		"10010001",   
+&nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    		"10110001",   
+&nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;    		"11100001",   
 	};
 
 	char**  area = make_area(zone, size);
@@ -71,15 +71,15 @@ int main(void)
 }
 
 $> gcc flood_fill.c test.c -o test; ./test
-11111111
-10001001
-10010001
-10110001
-11100001
+11111111   
+10001001   
+10010001   
+10110001   
+11100001  
 
-FFFFFFFF
-F000F00F
-F00F000F
-F0FF000F
-FFF0000F
-$>
+FFFFFFFF   
+F000F00F  
+F00F000F  
+F0FF000F   
+FFF0000F   
+$>   
