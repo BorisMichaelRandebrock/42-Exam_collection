@@ -15,20 +15,21 @@ Words will be separated by only one space in the output.
 
 If there's less than one argument, the program displays \n.
 
-Example:
+Example:   
 
-$>./rostring "abc   " | cat -e
-abc$
+$>./rostring "abc   " | cat -e  
+abc$    
 $>
-$>./rostring "Que la      lumiere soit et la lumiere fut"
-la lumiere soit et la lumiere fut Que
+$>./rostring "Que la      lumiere soit et la lumiere fut"   
+la lumiere soit et la lumiere fut Que  
 $>
-$>./rostring "     AkjhZ zLKIJz , 23y"
-zLKIJz , 23y AkjhZ
+$>./rostring "     AkjhZ zLKIJz , 23y"  
+zLKIJz , 23y AkjhZ   
 $>
-$>./rostring "first" "2" "11000000"
-first
-$>
-$>./rostring | cat -e
-$
-$>
+$>./rostring "first" "2" "11000000"  
+first    
+$>  
+$>./rostring | cat -e    
+$   
+$>   
+  
