@@ -1,6 +1,6 @@
-Assignment name  : do_op
-Expected files   : *.c, *.h
-Allowed functions: atoi, printf, write
+Assignment name  : do_op  
+Expected files   : *.c, *.h   
+Allowed functions: atoi, printf, write   
 --------------------------------------------------------------------------------
 
 Write a program that takes three strings:
