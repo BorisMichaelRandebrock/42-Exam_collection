@@ -15,9 +15,9 @@ cmp takes two void* and returns 0 when both parameters are equal.
 You have to use the ft_list.h file, which will contain:
 
 $>cat ft_list.h  
-typedef struct      s_list
-{
-    struct s_list   *next;
-    void            *data;
-}                   t_list;
+typedef struct      s_list  
+{  
+    struct s_list   *next;  
+    void            *data;  
+}                   t_list;   
 
