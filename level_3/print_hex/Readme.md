@@ -1,6 +1,6 @@
-Assignment name  : print_hex
-Expected files   : print_hex.c
-Allowed functions: write
+Assignment name  : print_hex  
+Expected files   : print_hex.c  
+Allowed functions: write  
 --------------------------------------------------------------------------------
 
 Write a program that takes a positive (or zero) number expressed in base 10,
