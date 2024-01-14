@@ -35,4 +35,4 @@ $>./tab_mult 19
 $>  
 $>./tab_mult | cat -e
 $
-$>
+$>  
