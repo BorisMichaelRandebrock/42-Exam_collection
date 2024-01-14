@@ -1,6 +1,6 @@
-Assignment name  : ft_strcmp
-Expected files   : ft_strcmp.c
-Allowed functions:
+Assignment name  : ft_strcmp  
+Expected files   : ft_strcmp.c  
+Allowed functions:  
 --------------------------------------------------------------------------------
 
 Reproduce the behavior of the function strcmp (man strcmp).
