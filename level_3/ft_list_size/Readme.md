@@ -1,6 +1,6 @@
-Assignment name  : ft_list_size
-Expected files   : ft_list_size.c, ft_list.h
-Allowed functions:
+Assignment name  : ft_list_size  
+Expected files   : ft_list_size.c, ft_list.h  
+Allowed functions:  
 --------------------------------------------------------------------------------
 
 Write a function that returns the number of elements in the linked list that's
