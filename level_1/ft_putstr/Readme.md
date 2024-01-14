@@ -1,6 +1,6 @@
-Assignment name  : ft_putstr
-Expected files   : ft_putstr.c
-Allowed functions: write
+Assignment name  : ft_putstr  
+Expected files   : ft_putstr.c   
+Allowed functions: write   
 --------------------------------------------------------------------------------
 
 Write a function that displays a string on the standard output.
