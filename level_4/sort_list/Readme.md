@@ -1,6 +1,6 @@
-Assignment name  : sort_list
-Expected files   : sort_list.c
-Allowed functions:
+Assignment name  : sort_list  
+Expected files   : sort_list.c  
+Allowed functions:  
 --------------------------------------------------------------------------------
 
 Write the following functions:
