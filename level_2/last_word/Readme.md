@@ -1,6 +1,6 @@
-Assignment name  : last_word
-Expected files   : last_word.c
-Allowed functions: write
+Assignment name  : last_word  
+Expected files   : last_word.c   
+Allowed functions: write   
 --------------------------------------------------------------------------------
 
 Write a program that takes a string and displays its last word followed by a \n.
