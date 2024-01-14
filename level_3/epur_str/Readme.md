@@ -1,6 +1,6 @@
-Assignment name  : epur_str
-Expected files   : epur_str.c
-Allowed functions: write
+Assignment name  : epur_str   
+Expected files   : epur_str.c   
+Allowed functions: write   
 --------------------------------------------------------------------------------
 
 Write a program that takes a string, and displays this string with exactly one
