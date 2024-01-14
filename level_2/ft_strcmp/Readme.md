@@ -9,6 +9,7 @@ Your function must be declared as follows:
 
 int    ft_strcmp(char *s1, char *s2);
 
+man strcmp:
 -------------------------------------
 NAME
      strcmp, strncmp – compare strings
