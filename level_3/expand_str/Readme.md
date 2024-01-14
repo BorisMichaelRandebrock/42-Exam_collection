@@ -1,6 +1,6 @@
-Assignment name  : expand_str
-Expected files   : expand_str.c
-Allowed functions: write
+Assignment name  : expand_str  
+Expected files   : expand_str.c  
+Allowed functions: write  
 --------------------------------------------------------------------------------
 
 Write a program that takes a string and displays it with exactly three spaces
