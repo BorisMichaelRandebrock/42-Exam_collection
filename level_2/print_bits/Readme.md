@@ -1,6 +1,6 @@
-Assignment name  : print_bits
-Expected files   : print_bits.c
-Allowed functions: write
+Assignment name  : print_bits   
+Expected files   : print_bits.c  
+Allowed functions: write  
 --------------------------------------------------------------------------------
 
 Write a function that takes a byte, and prints it in binary WITHOUT A NEWLINE
