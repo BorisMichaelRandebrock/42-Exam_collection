@@ -1,6 +1,6 @@
-Assignment name	: ft_strcspn
-Expected files	: ft_strcspn.c
-Allowed functions: None
+Assignment name	: ft_strcspn   
+Expected files	: ft_strcspn.c  
+Allowed functions: None   
 ---------------------------------------------------------------
 
 Reproduce exactly the behavior of the function strcspn
