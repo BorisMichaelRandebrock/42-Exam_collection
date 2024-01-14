@@ -1,6 +1,8 @@
-Assignment name  : rev_wstr
-Expected files   : rev_wstr.c
-Allowed functions: write, malloc, free
+In this asignement I have included 3 different solutions... just check them out :) 
+
+Assignment name  : rev_wstr  
+Expected files   : rev_wstr.c  
+Allowed functions: write, malloc, free  
 --------------------------------------------------------------------------------
 
 Write a program that takes a string as a parameter, and prints its words in
