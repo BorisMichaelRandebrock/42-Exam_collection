@@ -1,6 +1,6 @@
-Assignment name  : repeat_alpha
-Expected files   : repeat_alpha.c
-Allowed functions: write
+Assignment name  : repeat_alpha  
+Expected files   : repeat_alpha.c   
+Allowed functions: write   
 --------------------------------------------------------------------------------
 
 Write a program called repeat_alpha that takes a string and display it
