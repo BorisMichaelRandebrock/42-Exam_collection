@@ -1,4 +1,4 @@
-This is actually not an exercise but a compositon of 4 different execises with one main checking wwhether everything is correct.
+This is actually not an exercise but a compositon of 4 different execises with one main checking whether everything is correct.
 For me it has been a good exercise to better understanding binaries.
 
 The 4 exercises are:
