@@ -6,7 +6,7 @@
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 13:32:19 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/11 13:51:53 by brandebr         ###   ########.fr       */
+/*   Updated: 2024/01/30 17:21:15 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,14 @@ void	print_bit(unsigned char octet)
 
 unsigned char	reverse_bits(unsigned char octet)
 {
-	return (((octet >> 0) & 1) << 7) | (((octet >> 1) & 1) << 6) | (((octet >> 2) & 1) << 5) | (((octet >> 3) & 1) << 4) | (((octet >> 4) & 1) << 3) | (((octet >> 5) & 1) << 2) | (((octet >> 6) & 1) << 1) | (((octet >> 7) & 1) << 0);
+	return (((octet >> 0) & 1) << 7) |\
+		(((octet >> 1) & 1) << 6) |\
+		(((octet >> 2) & 1) << 5) |\
+		(((octet >> 3) & 1) << 4) |\
+		(((octet >> 4) & 1) << 3) |\
+		(((octet >> 5) & 1) << 2) |\
+		(((octet >> 6) & 1) << 1) |\
+		(((octet >> 7) & 1) << 0);
 }
 
 unsigned char	swap_bits(unsigned char octet)
