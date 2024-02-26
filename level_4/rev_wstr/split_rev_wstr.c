@@ -80,7 +80,7 @@ int	main(int argc, char **argv)
 		res = ft_split(argv[1]);
 		while (len >= 0)
 		{
-			printf("%s", res[len]);
+			printf("%s", res[len]);// use ft_putstr... printf is forbidden!!!
 			if (len >= 1)
 				printf(" ");
 			len--;
