@@ -6,7 +6,7 @@
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 18:42:47 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/12 18:35:27 by brandebr         ###   ########.fr       */
+/*   Updated: 2024/03/05 16:26:36 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int	main(int argc, char **argv)
 	{
 		num = ft_atoi_base(argv[1], atoi(argv[2]));
 		num2 = atoi(argv[1]);
-		printf("%i\n %i\n ", num, num2);
+		printf("%i\n %i\n", num, num2);
 	}
 }

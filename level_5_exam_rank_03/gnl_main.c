@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   gnl_main.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/26 10:43:38 by brandebr          #+#    #+#             */
-/*   Updated: 2024/02/26 11:19:25 by brandebr         ###   ########.fr       */
+/*   Created: 2024/02/29 10:14:21 by brandebr          #+#    #+#             */
+/*   Updated: 2024/03/01 12:06:42 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <fcntl.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-int ft_printf(const char *str, ... );
+char *get_next_line(int fd);
 
-int	main(void)
+int	main(int argc, char **argv)
 {
-	int 	ftprintf;
-	int		_printf;
-	ft_printf("%s\n", "toto");
-	ft_printf("Magic %s is %d\n", "number", 42);
-	ftprintf = ft_printf("Hexadecimal for %d is %x\n", 42, 42);
-	printf("---\n");
- 	printf("%s\n", "toto");
-	printf("Magic %s is %d\n ", "number", 42);
-	_printf = printf("Hexadecimal for %d is %x\n", 42, 42);
+	(void)argc;
 
-	printf("%d\n", ftprintf);
-	printf("%d\n", _printf);
+	int	fd = open(argv[1], O_RDONLY);
+	char	*line = get_next_line(fd);
+	
+	while (line)
+	{
+		printf("%s", line);
+		free(line);
+		line = get_next_line(fd);
+	}
 	return (0);
 }
