@@ -6,7 +6,7 @@
 /*   By: brandebr <brandebr@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 18:49:40 by brandebr          #+#    #+#             */
-/*   Updated: 2024/01/04 19:14:52 by brandebr         ###   ########.fr       */
+/*   Updated: 2024/03/08 16:25:58 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,12 @@ int	main(int argc, char **argv)
 		int	ran;
 		int	*res;
 		int i = 0;
-		(void)argc;
 
+		if (argc < 3 || argc > 3)
+		{
+			printf("please enter 2 numbers");
+			return (1);
+		}
 		start = atoi(argv[1]);
 		end = atoi(argv[2]);
 		ran = range(start, end);
