@@ -6,7 +6,7 @@
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 18:48:07 by brandebr          #+#    #+#             */
-/*   Updated: 2024/02/26 19:58:06 by brandebr         ###   ########.fr       */
+/*   Updated: 2024/03/08 14:57:39 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,13 @@ int	*ft_range(int start, int end)
 {
 	int	*ar;
 	int	i;
-
-	//	int	r;
+	int	r;
 	i = 0;
-	//	r = range(start, end);
-	//	r = abs((start - end)) + 1;  -- abs function works but forbidden. 
-	ar = malloc(sizeof(int) * (abs((start - end)) + 1));// use range fuction 👆
+	r = range(start, end);
+
+	//	r = abs((start - end)) + 1;  -- abs function works but FORBIDDEN. 
+	//ar = malloc(sizeof(int) * (abs((start - end)) + 1));// use range fuction 👆
+	ar = malloc(sizeof(int) * (r + 1));// use range fuction 👈🏻 
 	if (start == end)
 	{
 		ar[0] = start;

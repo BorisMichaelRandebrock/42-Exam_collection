@@ -11,6 +11,25 @@ int	ok(char c)
 	return (0);
 }
 
+int	ft_strlen(char *str)
+{
+	int i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
+
+void	ft_putstr(char *str)
+{
+	write(1, str, ft_strlen(str));
+/*	int		i = 0;
+
+	while (str[i])
+		write(1, str++, 1);
+//use whatever version is a better fit for you... 
+*/
+}
+
 int	wc(char *s)
 {
 	int	i;
@@ -80,12 +99,12 @@ int	main(int argc, char **argv)
 		res = ft_split(argv[1]);
 		while (len >= 0)
 		{
-			printf("%s", res[len]);// use ft_putstr... printf is forbidden!!!
+			ft_putstr(res[len]);
 			if (len >= 1)
-				printf(" ");
+				write(1, " ", 1);
 			len--;
 		}
-		printf("\n");
+		write(1, "\n", 1);
 	}
 	return (0);
 }
