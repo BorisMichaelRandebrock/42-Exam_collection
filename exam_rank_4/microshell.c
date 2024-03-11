@@ -6,7 +6,7 @@
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 12:16:15 by brandebr          #+#    #+#             */
-/*   Updated: 2024/03/08 14:21:56 by brandebr         ###   ########.fr       */
+/*   Updated: 2024/03/08 19:13:12 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 int	ft_strlen(char *str)
 {
 	int		i = 0;
-	while (str && str[i] != '\0')
+	while (str[i])
 		i++;
 	return (i);
 }

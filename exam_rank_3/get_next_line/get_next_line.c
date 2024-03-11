@@ -6,7 +6,7 @@
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 10:24:44 by brandebr          #+#    #+#             */
-/*   Updated: 2024/03/05 12:05:47 by brandebr         ###   ########.fr       */
+/*   Updated: 2024/03/11 13:11:39 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*del_line(char *buff)
 	return (result);
 }
 
-char	*ge_line(char *buff)
+char	*get_line(char *buff)
 {
 	int	i = 0;
 
@@ -122,7 +122,7 @@ char *get_next_line(int fd)
 		buffer[rd] = '\0';
 		store = ft_strjoin(store, buffer);
 	}
-	line = ge_line(store);
+	line = get_line(store);
 	store = del_line(store);
 	
 	if (!line || line[0] == '\0')
