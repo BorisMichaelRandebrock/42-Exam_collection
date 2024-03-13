@@ -6,10 +6,11 @@
 /*   By: brandebr <brandebr@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 10:54:03 by brandebr          #+#    #+#             */
-/*   Updated: 2024/02/26 11:19:27 by brandebr         ###   ########.fr       */
+/*   Updated: 2024/03/13 11:28:51 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -36,7 +37,7 @@ void	pud(long long int number,  int base, int *len)
 	*len += write(1, &hex[number % base], 1);
 }
 
-int ft_printf(const char *str, ... )
+int ft_printf(const char *str, ...)
 {
 	int	len = 0;
 	va_list	ptr;
