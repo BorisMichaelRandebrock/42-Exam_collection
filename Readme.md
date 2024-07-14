@@ -34,9 +34,9 @@ pro tip vim:
 for replace in any script something with vim you just enter in visual mode, highlight the whole text where you are looking for the expression to be replaced, press
 : (you should be now seeing at the bottom left he following :'<,'>) and next you press s/text_to_be_replaced/replacement_text 
 and hit enter... thats it. You should see a resume of the amount of replacements done at the bottom of the vim.
-I repeat: 
-click v
-highlight the whole text 
-click : 
-write s/to_be_replaced/replacement 
-enter
+I repeat:   
+click -> **v**  
+highlight the whole text   
+click -> **:**  
+write -> **s/to_be_replaced/replacement**   
+enter  
