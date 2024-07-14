@@ -23,8 +23,20 @@ Do not just copy the code.. understand it, search for other solutions on the web
 
 To see whether the your codes are working, you can run the through the grademe programm which is fairly close to the **real thing** and can help you to train for the examen.
 https://grademe.fr/   
+
 https://github.com/JCluzet/42_EXAM   
 also, there are other webs offering different solutions for the same problems
 https://github.com/pasqualerossi/42-School-Exam-Rank-02   
 https://github.com/nach131/ExamRank02 
 and so many others... just keep on and may the force be with you....
+
+pro tip vim:
+for replace in any script something with vim you just enter in visual mode, highlight the whole text where you are looking for the expression to be replaced, press
+: (you should be now seeing at the bottom left he following :'<,'>) and next you press s/text_to_be_replaced/replacement_text 
+and hit enter... thats it. You should see a resume of the amount of replacements done at the bottom of the vim.
+I repeat: 
+click v
+highlight the whole text 
+click : 
+write s/to_be_replaced/replacement 
+enter
