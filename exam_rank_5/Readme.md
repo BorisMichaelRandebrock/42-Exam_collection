@@ -53,7 +53,7 @@ Although this project involves many classes, the structure of code across files 
    `cp file_to_be_copied.hpp new_file.hpp`
 
 2. **Batch Replace** content with `sed`:  
-   `sed -i 's/to_remove/replace/g' new_file.hpp new_file.cpp`
+   `sed -i s/to_remove/replace/g new_file.hpp new_file.cpp`
 
 3. **Fine-tuning** in `vim` or your preferred editor:  
    Open the file in `vim`, highlight content with `v`, then use `:s/to_remove/replace/g` to refine specific content. This approach saves time and ensures consistency in code structure across all required files.
