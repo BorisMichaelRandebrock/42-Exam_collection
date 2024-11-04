@@ -15,16 +15,17 @@ The ExamRank5 project consists of three consecutive modules designed to build a 
 ## Module Breakdown
 
 ### cpp_module00: Warlock Class
-In this module, we focus on creating a `Warlock` class. - **Files Required:** `Warlock.hpp`, `Warlock.cpp` -   
-*Attributes:** Private attributes: `name` (std::string) and `title` (std::string) -   
-**Methods:** Constructor: Takes `name` and `title` and outputs a creation message. Destructor: Outputs a message upon destruction.    
-Getters: `getName()` and `getTitle()` returning constant references.    
-Setter: `setTitle(const std::string&)`, allows changing the `title`.   
-`introduce()`: Outputs a message with the `Warlock`'s name and title. The Warlock cannot be instantiated by copy or assignment, ensuring uniqueness and following Coplien’s form.
+In this module, we focus on creating a `Warlock` class. - **Files Required:** `Warlock.hpp`, `Warlock.cpp`    
+-*Attributes:** Private attributes: `name` (std::string) and `title` (std::string)    
+** Constructor: Takes `name` and `title` and outputs a creation message. Destructor: Outputs a message upon destruction.    
+- Getters: `getName()` and `getTitle()` returning constant references.    
+- Setter: `setTitle(const std::string&)`, allows changing the `title`.   
+**Methods:   
+- `introduce()`: Outputs a message with the `Warlock`'s name and title. The Warlock cannot be instantiated by copy or assignment, ensuring uniqueness and following Coplien’s form.
 
 ### cpp_module01: Abstract Spell and Target Classes with Fwoosh and Dummy
 This module expands the project by adding the `ASpell` and `ATarget` abstract base classes, along with their first derived classes, `Fwoosh` and `Dummy`. -   
-**Files Required:** `ASpell.hpp`, `ASpell.cpp`, `ATarget.hpp`, `ATarget.cpp`, `Fwoosh.hpp`, `Fwoosh.cpp`, `Dummy.hpp`, `Dummy.cpp` -    
+**Files Required:** `ASpell.hpp`, `ASpell.cpp`, `ATarget.hpp`, `ATarget.cpp`, `Fwoosh.hpp`, `Fwoosh.cpp`, `Dummy.hpp`, `Dummy.cpp`     
 **Classes and Implementation:**  
 **ASpell**: Represents spells with attributes like `name` and `effects`.    
 Methods: `getName()`, `getEffects()`, and a virtual `launch()` to define spell behavior.   
@@ -35,11 +36,14 @@ Integrate spells into `Warlock`, enabling spell-usage logic in the `Warlock` cla
 
 ### cpp_module02: Additional Spell and Target Classes, SpellBook, and TargetGenerator
 In the final module, you create additional implementations of spells and targets, along with `SpellBook` and `TargetGenerator` classes to manage spells and targets. -   
-**Files Required:** `Fireball.hpp`, `Fireball.cpp`, `Polymorph.hpp`, `Polymorph.cpp`, `Brickwall.hpp`, `Brickwall.cpp`, `SpellBook.hpp`, `SpellBook.cpp`, `TargetGenerator.hpp`, `TargetGenerator.cpp` -   
+**Files Required:** `Fireball.hpp`, `Fireball.cpp`, `Polymorph.hpp`, `Polymorph.cpp`, `Brickwall.hpp`, `Brickwall.cpp`, `SpellBook.hpp`, `SpellBook.cpp`, `TargetGenerator.hpp`, `TargetGenerator.cpp`    
 **Classes and Implementation:**    
-**Additional Spells and Targets:** **Fireball** and **Polymorph**: New spells inheriting from `ASpell`, each with unique `effects`. **Brickwall**: New target inheriting from `ATarget`, representing a type resistant to some spells. These 3 are simple repetitions of teh previous Fwoosh and Dummy classes.. BE AWARE OF CHANGING CORRECTLY THE CORRESPONDING MESSAGE, OTHERWISE YOU WILL GET A SEGFAULT.    
+**Additional Spells and Targets:** **Fireball** and **Polymorph**: New spells inheriting from `ASpell`, each with unique `effects`.    
+**Brickwall**: New target inheriting from `ATarget`, representing a type resistant to some spells.    
+These 3 are simple repetitions of teh previous Fwoosh and Dummy classes.. BE AWARE OF CHANGING CORRECTLY THE CORRESPONDING MESSAGE, OTHERWISE YOU WILL GET A SEGFAULT.    
 **SpellBook**: Manages the collection of spells. Methods: `learnSpell()`, `forgetSpell()`, and `createSpell()`.   
-**TargetGenerator**: Manages targets similarly to SpellBook, allowing creation and management of target types. The `SpellBook` and `TargetGenerator` simplify spell and target handling, with each Warlock able to learn and use spells dynamically. 
+**TargetGenerator**: Manages targets similarly to SpellBook, allowing creation and management of target types.    
+The `SpellBook` and `TargetGenerator` simplify spell and target handling, with each Warlock able to learn and use spells dynamically. 
 
 ## Tips for Efficiency
 Although this project involves many classes, the structure of code across files is very similar. This can be simplified with file duplication and search/replace techniques to avoid repetitive typing. Here’s a guide:
@@ -55,7 +59,7 @@ Although this project involves many classes, the structure of code across files 
    Open the file in `vim`, highlight content with `v`, then use `:s/to_remove/replace/g` to refine specific content. This approach saves time and ensures consistency in code structure across all required files.
    
 4. **Output checking** in terminal:   
-	you have several options here.., I chose to simply compare in the terminal the output of my code ./a.out | cat -e with the given output via the `diff <(echo "my text") <(echo "given text")`   
+	you have several options here.., I chose to simply compare in the terminal the output of my code `./a.out | cat -e` with the given output via the `diff <(echo "my text") <(echo "given text")`   
 	if everytihing is correct, there is no feedback.. if something is not the same it repeats the differences in your terminal..    In order to check whether i used the command correctly, I copied the terminl input completely and changed a letter after having run the check in order to see whether everything sticks up.
 
 Good luck!
