@@ -1,8 +1,8 @@
 # ExamRank5 - Warlock Spell training C++
 
-In Exam Rank 5, the focus is entirely on cpp classes.   Don’t feel distressed or overwhelmed by the workload — it is actually not as difficult or time-consuming as it might seem.
+In Exam Rank 5, the focus is entirely on cpp classes.     Don’t feel distressed or overwhelmed by the workload — it is actually not as difficult or time-consuming as it might seem.
 
-All you need to do is stay focused on each task and understand what needs to be done.    
+All you need to do is stay focused on the task at hand and understand what needs to be done.    
 The main challenge is managing the workflow and avoiding confusion over the number of classes. However, most classes are straightforward copies with minor adjustments.
 
 ## Overview
@@ -56,7 +56,7 @@ Although this project involves many classes, the structure of code across files 
    `sed -i s/to_remove/replace/g new_file.hpp new_file.cpp`
 
 3. **Fine-tuning** in `vim` or your preferred editor:  
-   Open the file in `vim`, highlight content with `v`, then use `:s/old/new/g` to refine specific content. This approach saves time and ensures consistency in code structure across all required files.
+   Open the file in `vim`, highlight content with `v`, then use `:s/old/new/g` to refine specific content.
    
 4. **Output checking** in terminal:   
 	you have several options here.., I chose to simply compare in the terminal the output of my code `./a.out | cat -e` with the given output via the `diff <(echo "my text") <(echo "given text")`   
