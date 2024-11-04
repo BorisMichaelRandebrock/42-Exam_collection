@@ -38,8 +38,9 @@ In the final module, you create additional implementations of spells and targets
 **new additional files:** `Fireball.hpp`, `Fireball.cpp`, `Polymorph.hpp`, `Polymorph.cpp`, `Brickwall.hpp`, `Brickwall.cpp`, `SpellBook.hpp`, `SpellBook.cpp`, `TargetGenerator.hpp`, `TargetGenerator.cpp`    
 **Classes and Implementation:**    
 **Additional Spells and Targets:** **Fireball** and **Polymorph**: New spells inheriting from `ASpell`, each with unique `effects`.    
-**Brickwall**: New target inheriting from `ATarget`, representing a type resistant to some spells.    
-These 3 are simple repetitions of the previous Fwoosh and Dummy classes. BE AWARE OF CHANGING CORRECTLY THE CORRESPONDING MESSAGE, OTHERWISE YOU WILL GET A SEGFAULT.    
+**Brickwall**: New target inheriting from `ATarget`.    
+These 3 are simple repetitions of the previous Fwoosh and Dummy classes.    
+BE AWARE OF CHANGING CORRECTLY THE CORRESPONDING MESSAGE, OTHERWISE YOU WILL GET A SEGFAULT.    
 **SpellBook**: Manages the collection of spells. Methods: `learnSpell()`, `forgetSpell()`, and `createSpell()`.   
 **TargetGenerator**: Manages targets similarly to SpellBook, allowing creation and management of target types.    
 The `SpellBook` and `TargetGenerator` simplify spell and target handling, with each Warlock able to learn and use spells dynamically. 
