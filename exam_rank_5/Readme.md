@@ -56,7 +56,7 @@ Although this project involves many classes, the structure of code across files 
    `sed -i s/to_remove/replace/g new_file.hpp new_file.cpp`
 
 3. **Fine-tuning** in `vim` or your preferred editor:  
-   Open the file in `vim`, highlight content with `v`, then use `:s/to_remove/replace/g` to refine specific content. This approach saves time and ensures consistency in code structure across all required files.
+   Open the file in `vim`, highlight content with `v`, then use `:s/old/new/g` to refine specific content. This approach saves time and ensures consistency in code structure across all required files.
    
 4. **Output checking** in terminal:   
 	you have several options here.., I chose to simply compare in the terminal the output of my code `./a.out | cat -e` with the given output via the `diff <(echo "my text") <(echo "given text")`   
