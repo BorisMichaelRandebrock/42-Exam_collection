@@ -1,6 +1,7 @@
 # ExamRank5 - Warlock Spell training C++
 
-In Exam Rank 5, the focus is entirely on cpp classes.     Don’t feel distressed or overwhelmed by the workload — it is actually not as difficult or time-consuming as it might seem.
+In Exam Rank 5, the focus is entirely on cpp classes.     
+Don’t feel distressed or overwhelmed by the workload — it is actually not as difficult or time-consuming as it might seem.
 
 All you need to do is stay focused on the task at hand and understand what needs to be done.    
 The main challenge is managing the workflow and avoiding confusion over the number of classes. However, most classes are straightforward copies with minor adjustments.
