@@ -3,10 +3,10 @@
 In Exam Rank 5, the focus is entirely on cpp classes.   Don’t feel distressed or overwhelmed by the workload — it is actually not as difficult or time-consuming as it might seem.
 
 All you need to do is stay focused on each task and understand what needs to be done.    
-The main challenge is managing the workflow and avoiding confusion over the number of classes. However, most classes are straightforward copies, and others only require a simple review and minor adjustments.
+The main challenge is managing the workflow and avoiding confusion over the number of classes. However, most classes are straightforward copies with minor adjustments.
 
-## Project Overview
-The ExamRank5 project consists of three consecutive modules designed to build a small system around the concept of a `Warlock` character and their interactions with spells and targets. The modules cover creating and managing classes in C++ using principles of Object-Oriented Programming, following Coplien's form, and focusing on encapsulation, inheritance, and polymorphism. This project has three modules, each progressively building on the last:   
+## Overview
+The ExamRank5 consists of three consecutive modules designed to build a small system around the concept of a `Warlock` character and its interactions with spells and targets. The modules cover creating and managing classes in C++ using principles of Object-Oriented Programming, following Coplien's form, and focusing on encapsulation, inheritance, and polymorphism. This project has three modules, each progressively building on the last:   
 
 1. **cpp_module00** - The `Warlock` class    
 2. **cpp_module01** - Abstract base classes `ASpell` and `ATarget` with `Fwoosh` and `Dummy` implementations. Warlock class changes for enabling use of the new spell Fwoosh on the target Dummy.    
@@ -16,7 +16,7 @@ The ExamRank5 project consists of three consecutive modules designed to build a 
 
 ### cpp_module00: Warlock Class
 In this module, we focus on creating a `Warlock` class. - **Files Required:** `Warlock.hpp`, `Warlock.cpp`    
--*Attributes:** Private attributes: `name` (std::string) and `title` (std::string)    
+**Attributes:** Private attributes: `name` (std::string) and `title` (std::string)    
 ** Constructor: Takes `name` and `title` and outputs a creation message. Destructor: Outputs a message upon destruction.    
 - Getters: `getName()` and `getTitle()` returning constant references.    
 - Setter: `setTitle(const std::string&)`, allows changing the `title`.   
@@ -24,7 +24,7 @@ In this module, we focus on creating a `Warlock` class. - **Files Required:** `W
 - `introduce()`: Outputs a message with the `Warlock`'s name and title. The Warlock cannot be instantiated by copy or assignment, ensuring uniqueness and following Coplien’s form.
 
 ### cpp_module01: Abstract Spell and Target Classes with Fwoosh and Dummy
-This module expands the project by adding the `ASpell` and `ATarget` abstract base classes, along with their first derived classes, `Fwoosh` and `Dummy`. -   
+This module expands the project by adding the `ASpell` and `ATarget` abstract base classes, along with their first derived classes, `Fwoosh` and `Dummy`.    
 **Files Required:** `ASpell.hpp`, `ASpell.cpp`, `ATarget.hpp`, `ATarget.cpp`, `Fwoosh.hpp`, `Fwoosh.cpp`, `Dummy.hpp`, `Dummy.cpp`     
 **Classes and Implementation:**  
 **ASpell**: Represents spells with attributes like `name` and `effects`.    
