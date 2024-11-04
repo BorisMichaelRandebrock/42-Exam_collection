@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@42barcelona.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/28 11:11:49 by brandebr          #+#    #+#             */
-/*   Updated: 2024/10/28 12:58:02 by brandebr         ###   ########.fr       */
+/*   Created: 2024/11/01 12:26:56 by brandebr          #+#    #+#             */
+/*   Updated: 2024/11/01 13:19:12 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ Warlock::Warlock(const std::string &name, const std::string &title) : _name(name
 }
 
 Warlock::~Warlock() {
+	for (std::map<std::string, ASpell *>::iterator it = _arr.begin(); it != _arr.end(); ++it)
+		delete it->second;
 	std::cout << this->_name << ": My job here is done!" << std::endl;
 }
 
@@ -33,30 +35,31 @@ Warlock::Warlock(const Warlock &cpy) {
 const std::string &Warlock::getName() const { return this->_name; }
 const std::string &Warlock::getTitle() const { return this->_title; }
 
-void Warlock::setTitle(const std::string &title) {
-	this->_title = title;
-}
+void Warlock::setTitle(const std::string &title) { this->_title = title; }
 
 void Warlock::introduce() const {
 	std::cout << this->_name << ": I am " << this->_name << ", " << this->_title << "!" << std::endl;
 }
 
+void Warlock::learnSpell(const ASpell *name) {
+	std::map<std::string, ASpell *>::iterator it = _arr.find(name->getName());
 
-void Warlock::learnSpell(ASpell *name) {
-	_arr.learnSpell(name);
+	if (it == _arr.end())
+		_arr[name->getName()] = name->clone();
 }
-
 
 void Warlock::forgetSpell(const std::string name) {
-	_arr.forgetSpell(name);
-}
+	std::map<std::string, ASpell *>::iterator it = _arr.find(name);
 
-void Warlock::launchSpell(const std::string name, ATarget &target) {
-	ASpell *spell = _arr->createSpell(name);
-
-	if (spell) {
-		spell->launch(target);
-		delete spell;
+	if (it != _arr.end()) {
+		delete it->second;
+		_arr.erase(it);
 	}
 }
 
+void Warlock::launchSpell(const std::string name, ATarget &target) {
+	std::map<std::string, ASpell *>::iterator it = _arr.find(name);
+
+	if (it != _arr.end())
+		it->second->launch(target);
+}

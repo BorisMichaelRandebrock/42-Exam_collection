@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@42barcelona.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/28 11:07:09 by brandebr          #+#    #+#             */
-/*   Updated: 2024/10/28 12:23:58 by brandebr         ###   ########.fr       */
+/*   Created: 2024/11/01 12:24:01 by brandebr          #+#    #+#             */
+/*   Updated: 2024/11/01 13:11:42 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 #include <iostream>
 #include <map>
 #include "ASpell.hpp"
+#include "ATarget.hpp"
+
 
 class Warlock {
 	private:
@@ -28,14 +30,15 @@ class Warlock {
 	public:
 		Warlock(const std::string &name, const std::string &title);
 		~Warlock();
+
 		const std::string &getName() const;
 		const std::string &getTitle() const;
 
 		void setTitle(const std::string &title);
+
 		void introduce() const;
 
-		void learnSpell(ASpell *);
+		void learnSpell(const ASpell *);
 		void forgetSpell(const std::string name);
 		void launchSpell(const std::string name, ATarget &);
 };
-

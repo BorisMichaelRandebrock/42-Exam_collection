@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@42barcelona.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/28 11:07:09 by brandebr          #+#    #+#             */
-/*   Updated: 2024/10/28 12:01:29 by brandebr         ###   ########.fr       */
+/*   Created: 2024/11/01 12:24:01 by brandebr          #+#    #+#             */
+/*   Updated: 2024/11/01 12:52:00 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ class ASpell {
 	public:
 		ASpell(const std::string &name, const std::string &effects);
 		virtual ~ASpell();
+
 		const std::string &getName() const;
 		const std::string &getEffects() const;
-
+		
 		virtual ASpell *clone() const = 0;
 
-		void launch(const ATarget &);
+		void launch(const ATarget &) const;
 };
-

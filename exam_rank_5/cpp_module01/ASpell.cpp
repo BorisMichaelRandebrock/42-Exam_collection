@@ -5,16 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: brandebr <brandebr@42barcelona.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/28 11:11:49 by brandebr          #+#    #+#             */
-/*   Updated: 2024/10/28 12:02:38 by brandebr         ###   ########.fr       */
+/*   Created: 2024/11/01 12:26:56 by brandebr          #+#    #+#             */
+/*   Updated: 2024/11/01 12:51:41 by brandebr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ASpell.hpp"
 
-ASpell::ASpell(const std::string &name, const std::string &effects) : _name(name), _effects(effects) {}
+ASpell::ASpell(const std::string &name, const std::string &effects) : _name(name), _effects(effects) {
+}
 
-ASpell::~ASpell() {}
+ASpell::~ASpell() {
+}
 
 ASpell &ASpell::operator=(const ASpell &cpy) {
 	this->_name = cpy._name;
@@ -29,6 +31,6 @@ ASpell::ASpell(const ASpell &cpy) {
 const std::string &ASpell::getName() const { return this->_name; }
 const std::string &ASpell::getEffects() const { return this->_effects; }
 
-void ASpell::launch(const ATarget &target) {
+void ASpell::launch(const ATarget &target) const {
 	target.getHitBySpell(*this);
 }
