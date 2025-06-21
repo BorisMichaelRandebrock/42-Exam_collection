@@ -63,4 +63,30 @@ Although this project involves many classes, the structure of code across files 
 	you have several options here.., I chose to simply compare in the terminal the output of my code `./a.out | cat -e` with the given output via the `diff <(echo "my text") <(echo "given text")`   
 	if everytihing is correct, there is no feedback.. if something is not the same it repeats the differences in your terminal..    In order to check whether i used the command correctly, I copied the terminl input completely and changed a letter after having run the check in order to see whether everything sticks up.
 
+
+5. **Autocompletion** in `vim`:
+
+- `⌃ + n` | `⌃ + p`:  
+  Word completion from the buffer.  
+  - `⌃ + n` searches *forward*  
+  - `⌃ + p` searches *backward*
+
+- `⌃ + x`, then `⌃ + l`:  
+  Line completion — completes an entire line based on lines you've written in the current buffer.
+
+- `⌃ + x`, then `⌃ + f`:  
+  File name completion — completes file names and paths.
+
+
+
+
+
+
+
+
+
+	
+   
+
+
 Good luck!
